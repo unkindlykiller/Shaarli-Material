@@ -1,5 +1,5 @@
 {$isCalledFromBookmarklet=array_key_exists('source', $_GET) && in_array($_GET['source'], array('bookmarklet'))}
-{$displayAddNewLinkIcon=(($is_logged_in || $openshaarli) && in_array($pageName, array('linklist', 'tools', 'tag.cloud', 'tag.list', 'picwall', 'daily')))}
+{$displayAddNewLinkIcon=(($is_logged_in || $openshaarli) && in_array($pageName, array('linklist', 'tools', 'tag.cloud', 'tag.list')))}
 
 {if="$isCalledFromBookmarklet"}
     {ignore} When called as a popup from bookmarklet, do not display menu. {/ignore}
