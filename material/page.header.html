@@ -1,4 +1,4 @@
-{$isCalledFromBookmarklet=array_key_exists('source', $_GET) && in_array($_GET['source'], array('bookmarklet'))}
+v{$isCalledFromBookmarklet=array_key_exists('source', $_GET) && in_array($_GET['source'], array('bookmarklet'))}
 {$displayAddNewLinkIcon=(($is_logged_in || $openshaarli) && in_array($pageName, array('linklist', 'tools', 'tag.cloud', 'tag.list', 'picwall', 'daily')))}
 
 {if="$isCalledFromBookmarklet"}
@@ -15,14 +15,12 @@
                     <div class="col-xs-6 col-sm-3 text-center">
                         <a href="{$base_path}/tags/cloud" class="toolbar-link button-inverse ripple">{'Tag cloud'|t}</a>
                     </div>
-                    <!--<div class="col-xs-6 col-sm-3 text-center">
+                    <div class="col-xs-6 col-sm-3 text-center">
                         <a href="{$base_path}/picture-wall?{function="ltrim($searchcrits, '&')"}" class="toolbar-link button-inverse ripple">{'Picture wall'|t}</a>
-                    </div>-->
-<!--
+                    </div>
                     <div class="col-xs-6 col-sm-3 text-center">
                         <a href="{$base_path}/daily" class="toolbar-link button-inverse ripple">{'Daily'|t}</a>
                     </div>
--->
                     <div class="col-xs-6 col-sm-3 text-center">
                         <button class="toolbar-link button-inverse ripple" id="button-search">{'Search'|t}</button>
                     </div>
